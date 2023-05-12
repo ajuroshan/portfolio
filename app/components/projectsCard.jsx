@@ -1,7 +1,18 @@
 import React from "react";
+import Image from "next/image";
 
-const ProjectsCard = () => {
-	return <div className="h-72 w-h-72 border border-[#2e2d2d] bg-[#111111]">ProjectsCard</div>;
+const ProjectsCard = ({ src, Title, Description }) => {
+	return (
+		<div className="h-80 w-72 border border-[#2e2d2d] bg-[#111111]">
+			<div className="m-4 mx-8 flex flex-col items-center">
+				<Image src={src} className="mt-4 grayscale hover:grayscale-0 transition duration-500 ease-in-out" />
+				<div className="mt-3">
+					<h1 className="text-left py-2 font-bold text-lg">{Title}</h1>
+					<p className="text-left text-sm">{Description}</p>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default ProjectsCard;
