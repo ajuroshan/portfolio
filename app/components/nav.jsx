@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Nav = () => {
 	return (
-		<div className="flex items-center justify-between border-b border-[#282828] p-3 mx-40 mb-10 mt-3">
+		<nav className="flex items-center justify-between border-b border-[#282828] p-3 mx-10 mb-10 mt-3 text-xs md:text-base md:mx-40 ">
 			<Link className="hover:text-[#bebebe]  transition duration-200" href={"/"}>
 				/ajuroshan
 			</Link>
@@ -18,7 +18,7 @@ const Nav = () => {
 					Instagram
 				</Link>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
