@@ -80,8 +80,8 @@ export default function Home() {
 				<section className="w-full min-h-screen flex flex-col md:justify-between">
 					<div className="flex flex-col justify-center text-center gap-10 items-center m-10 p-4 flex-1">
 						<Image src={profile} alt="Picture of the author" height={110} />
-						<h1 className="text-3xl font-bold">Hi, I'm Ajmal Roshan 👋</h1>
-						<p className="text-lg">"Crafting digital experiences that leave a lasting impact."</p>
+						<h1 className="text-3xl font-bold">Hi, I &apos; m Ajmal Roshan 👋</h1>
+						<p className="text-lg">&quot;Crafting digital experiences that leave a lasting impact.&quot;</p>
 					</div>
 					<div className="flex w-full h-52 bg-[#111111] items-center justify-center"></div>
 				</section>
