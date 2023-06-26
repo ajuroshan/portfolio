@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	output: {
+		publicFolder: "/public", // Change '/public' to the desired output directory
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
