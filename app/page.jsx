@@ -132,6 +132,7 @@ export default function Home() {
 					</div>
 					<div className="flex w-full h-40 bg-[#111111] items-center justify-center">
 						<p className="text-[#7d7d7d]">Made with ❤️ by Ajmal Roshan</p>
+						<p className="text-[#7d7d7d]">Made with ❤️ by Ajmal Roshan</p>
 					</div>
 				</section>
 			</main>
