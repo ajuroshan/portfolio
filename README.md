@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+![Frame 37](https://github.com/ajuroshan/portfolio/assets/70354172/b7204f89-6613-497d-afe4-6355f8a7b403)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This repository contains the source code for my personal portfolio website. The website showcases my skills, projects, and contact information.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) - A React framework for server-rendered applications.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Image](https://nextjs.org/docs/api-reference/next/image) - Next.js Image component for optimizing and serving images.
+- [GitHub](https://github.com/) - Version control and hosting for the project's code.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Visit the Portfolio
 
-## Learn More
+You can access and explore my portfolio website by visiting the following link: [Personal Portfolio](https://ajuroshan.github.io/portfolio/)
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to navigate through the different sections to learn more about me, my skills, projects, and contact information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Feedback
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I welcome any feedback, suggestions, or questions you may have regarding my portfolio website. If you have any thoughts or ideas on how I can improve it, please feel free to reach out to me. Your feedback is valuable and greatly appreciated.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting my portfolio website! I hope you find it informative and engaging.
