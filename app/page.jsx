@@ -10,6 +10,7 @@ import python from "../public/Python-logo-notext 1.png";
 import figma from "../public/figma_logo.png";
 import unsplash_1 from "../public/unsplash_1.png";
 import ProjectsCard from "./components/projectsCard";
+import Resume from "../public/images/Resume.png";
 
 import image_1 from "../public/images/1.png";
 import image_2 from "../public/images/2.png";
@@ -55,7 +56,6 @@ const images = [
 	{ src: image_6, alt: "Figma" },
 	{ src: image_7, alt: "Python" },
 	{ src: image_8, alt: "Blender" },
- 
 ];
 
 const projects = [
@@ -179,10 +179,7 @@ export default function Home() {
 					<div className="m-4 p-2 mt-10">
 						<h1 className="text-xl text-center">You can Reach out to me.</h1>
 						<div className="flex flex-col md:justify-around md:flex-row items-center gap-10 w-full justify-between mt-10">
-							<div className="flex flex-col md:flex-row gap-10">
-								<ProjectsCard src={python} Title="Python" description="Lorem Ipsum is simply dummy text of the printing." />
-								<ProjectsCard src={django} Title="Python" description="Lorem Ipsum is simply dummy text of the printing." />
-							</div>
+							<Image src={Resume} width={600} alt="Resume" />
 							<div className="flex flex-col h-40 justify-evenly items-center">
 								<h1 className="text-center">Download My Resume</h1>
 								<button className="bg-transparent hover:bg-[#2e2d2d] font-normal hover:text-white py-2 px-4 border border-[#2e2d2d] hover:border-transparent">Resume</button>
