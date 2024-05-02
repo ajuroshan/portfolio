@@ -1,5 +1,5 @@
 // next.config.js
 
-// module.exports = {
-// 	output: "export",
-// };
+module.exports = {
+	output: "export",
+};
