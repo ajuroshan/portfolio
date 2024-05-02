@@ -37,13 +37,15 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
+	border-width: 2px;
 	border-radius: 50%;
-	filter: blur(20px);
-	background-color: rgb(255, 67, 75);
-	background: linear-gradient(#43d9ad, #4d5bce);
-	opacity: 0.4;
+	border-color: #d8c981;
+	/* filter: blur(20px); */
+	/* background-color: rgb(255, 67, 75); */
+	/* background: linear-gradient(#d9d743, #d8c981); */
+	opacity: 0.6;
 	z-index: 2;
 }
 

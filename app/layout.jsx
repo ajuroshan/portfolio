@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
 			<body className={clsx("bg-[#0d0d0d] text-[#949494] ", montserrat.className)}>
 				<Nav />
 				{children}
+				<Mousefollow/>
 				<Footer />
 			</body>
 		</html>
