@@ -115,7 +115,7 @@ export default function Home() {
 							<div className="flex flex-col md:flex-row gap-10">
 								<ProjectsCard title="Github" description="Code with me on Github! Let's build awesome stuff together."  link={"https://github.com/ajuroshan"} link_text={"For Aliens"}/>
 								<ProjectsCard title="Linkedin" description="Hit me up on LinkedIn for professional updates and virtual networking!" link={"https://www.linkedin.com/in/ajuroshan/"} link_text={"For Professionals"} />
-								<ProjectsCard title="Instagram" description="Tech, travel, and occasional stories. Follow me on Insta!" link={"https://github.com/ajuroshan"} link_text={"For normal people"}  />
+								<ProjectsCard title="Instagram" description="Tech, travel, and occasional stories. Follow me on Insta!" link={"https://www.instagram.com/ajuroshan_/"} link_text={"For normal people"}  />
 							</div>
 							<div className="flex flex-col h-40 justify-evenly items-center">
 								<h1 className="text-center">Download My Resume</h1>
