@@ -11,54 +11,14 @@ import figma from "../public/figma_logo.png";
 import unsplash_1 from "../public/unsplash_1.png";
 import ProjectsCard from "./components/projectsCard";
 
-import image_1 from "../public/images/1.png";
-import image_2 from "../public/images/2.png";
-import image_3 from "../public/images/3.png";
-import image_4 from "../public/images/4.png";
-import image_5 from "../public/images/5.png";
-import image_6 from "../public/images/6.png";
-import image_7 from "../public/images/7.png";
-import image_8 from "../public/images/8.png";
-
 import React, { useState } from "react";
-import ImageGrid from "./components/imagegrid";
-
-const skills = [
-	{ src: arduino, title: "Arduino" },
-	{ src: python, title: "Python" },
-	{ src: blender, title: "Blender" },
-	{ src: davinci, title: "DaVinci" },
-	{ src: django, title: "Django" },
-	{ src: figma, title: "Figma" },
-];
-const images = [
-	{ src: image_1, alt: "Arduino" },
-	{ src: image_2, alt: "Python" },
-	{ src: image_3, alt: "Blender" },
-	{ src: image_4, alt: "DaVinci" },
-	{ src: image_5, alt: "Django" },
-	{ src: image_6, alt: "Figma" },
-	{ src: image_7, alt: "Python" },
-	{ src: image_8, alt: "Blender" },
-	{ src: image_4, alt: "DaVinci" },
-	{ src: image_5, alt: "Django" },
-	{ src: image_6, alt: "Figma" },
-	{ src: image_7, alt: "Python" },
-	{ src: image_8, alt: "Blender" },
-	{ src: image_4, alt: "DaVinci" },
-	{ src: image_5, alt: "Django" },
-	{ src: image_6, alt: "Figma" },
-	{ src: image_7, alt: "Python" },
-	{ src: image_8, alt: "Blender" },
-	{ src: image_4, alt: "DaVinci" },
-	{ src: image_5, alt: "Django" },
-	{ src: image_6, alt: "Figma" },
-	{ src: image_7, alt: "Python" },
-	{ src: image_8, alt: "Blender" },
- 
-];
 
 const projects = [
+	{
+		src: unsplash_1,
+		title: "Python Project",
+		description: "Lorem Ipsum is simply dummy text of the printing.",
+	},
 	{
 		src: unsplash_1,
 		title: "Python Project",
@@ -131,57 +91,31 @@ export default function Home() {
 						))}
 				</div>
 			</div>
-			<main className="flex flex-col justify-between items-center z-10">
-				<section className="w-full min-h-screen flex flex-col md:justify-between">
-					<div className="flex flex-col justify-center text-center gap-10 items-center m-10 pb-36 p-4 flex-1">
+			<section className="min-w-full z-10">
+				<section className=" flex flex-col min-h-screen md:justify-center">
+					<div className="flex flex-col justify-center text-center gap-3 items-center m-10 pb-36 p-4 flex-1">
 						<Image src={profile} alt="Picture of the author" height={110} />
-						<h1 className="text-3xl font-bold">Hi, I &apos; m Ajmal Roshan 👋</h1>
-						<p className="text-lg">&quot;Crafting digital experiences that leave a lasting impact.&quot;</p>
+						<h1 className="text-2xl md:text-3xl font-bold mt-5">Hi, I &apos; m Ajmal Roshan 👋</h1>
+						<p className="text-sm md:text-lg">&quot;Crafting digital experiences that leave a lasting impact.&quot;</p>
 					</div>
 				</section>
-				<section className="flex min-h-screen bg-[#111111] w-full  justify-evenly">
-					<div className="flex flex-col justify-evenly">
-						<div className=" text-[30px] font-semibold">These are some of the things i know.</div>
-						<div className="flex flex-col gap-8">
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">🌐 Frontend</h1>
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">🔗 API</h1>
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">💾 Backend</h1>
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">👨‍💻 Programming Languages</h1>
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">🎨 Design</h1>
-							<h1 className=" font-normal text-[25px] hover:text-white ease-in-out duration-100">⚙️ Other</h1>
-						</div>
-					</div>
-					<div className="grid items-center justify-center grid-cols-4 gap-4 mb-28 mt-48">
-						{skills.map((skill, index) => (
-							<div className="flex items-center justify-center" key={index}>
-								<Logos src={skill.src} title={skill.title} onMouseEnter={() => setSelectedSkill(skill)} onMouseLeave={() => setSelectedSkill(null)} />
-							</div>
-						))}
+				<section className="container flex flex-col gap-10 md:gap-32 p-10 md:p-32 bg-[#111111] min-h-screen min-w-full">
+					<div className="text-xl md:text-2xl  font-semibold">These are some of the things i know.</div>
+					<div className="flex flex-col md:flex-row gap-10 items-center">
+						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
+						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
+						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
+						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
 					</div>
 				</section>
-				<section className="min-h-screen flex flex-col w-full justify-between flex-wrap text-center">
-					<h1 className="p-3 text-xl text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00]">These are some of my Projects.</h1>
-
-					<div className="flex flex-col md:flex-row w-full justify-around items-center gap-10 mt-10">
-						{projects.map((project, index) => (
-							<ProjectsCard key={index} src={project.src} title={project.title} description={project.description} />
-						))}
-					</div>
-					<div className="hidden md:flex flex-col m-10">
-						<ImageGrid images={images} />
-						<h1 className="text-left py-2 font-bold text-lg">Python</h1>
-						<p className="text-left text-sm md:text-md">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, commodi eos illo, facere dolorem tempore excepturi reprehenderit voluptates odio, blanditiis voluptate magnam optio? Excepturi nulla sit ad dolorem est nostrum.
-						</p>
-					</div>
-				</section>
-				<section className="min-h-screen flex flex-col w-full justify-between">
+				<section className="flex flex-col w-full justify-between">
 					<div className="m-4 p-2 mt-10">
 						<h1 className="text-xl text-center">You can Reach out to me.</h1>
-						<div className="flex flex-col md:justify-around md:flex-row items-center gap-10 w-full justify-between mt-10">
+						<div className="flex flex-col md:justify-around  items-center gap-10 w-full justify-between my-10">
 							<div className="flex flex-col md:flex-row gap-10">
-								<ProjectsCard src={python} Title="Python" description="Lorem Ipsum is simply dummy text of the printing." />
-								<ProjectsCard src={django} Title="Python" description="Lorem Ipsum is simply dummy text of the printing." />
+								<ProjectsCard title="Github" description="Lorem Ipsum is simply dummy text of the printing." />
+								<ProjectsCard title="Linkedin" description="Lorem Ipsum is simply dummy text of the printing." />
+								<ProjectsCard title="Linkedin" description="Lorem Ipsum is simply dummy text of the printing." />
 							</div>
 							<div className="flex flex-col h-40 justify-evenly items-center">
 								<h1 className="text-center">Download My Resume</h1>
@@ -189,11 +123,12 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="flex w-full h-40 bg-[#111111] items-center justify-center">
-						<p className="text-[#7d7d7d]">Made with ❤️ by Ajmal Roshan</p>
-					</div>
 				</section>
-			</main>
+			</section>
 		</div>
 	);
+}
+
+{
+	/* <h1 className="p-3 text-xl text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00]">These are some of my Projects.</h1> */
 }
