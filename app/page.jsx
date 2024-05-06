@@ -120,7 +120,7 @@ export default function Home() {
 							<div className="flex flex-col h-40 justify-evenly items-center">
 								<h1 className="text-center">Download My Resume</h1>
 								<a
-									href="/Resume_v2.pdf"
+									href="/resume.pdf"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="bg-transparent hover:bg-[#2e2d2d] font-normal py-2 px-4 border border-[#2e2d2d] hover:border-transparent hover:text-[#ffc83d] transition duration-200 rounded-sm"
