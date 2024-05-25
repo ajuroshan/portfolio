@@ -1,6 +1,10 @@
 "use client";
 import Image from "next/image";
+
 import Logos from "./components/logos";
+import ProjectsCard from "./components/projectsCard";
+import ImageCard from "./components/imagecard";
+
 import profile from "../public/profile_pic.png";
 import arduino from "../public/arduino-seeklogo.com 1.png";
 import blender from "../public/blender_icon_128x128 1.png";
@@ -9,7 +13,8 @@ import django from "../public/django-logo-negative 1.png";
 import python from "../public/Python-logo-notext 1.png";
 import figma from "../public/figma_logo.png";
 import unsplash_1 from "../public/unsplash_1.png";
-import ProjectsCard from "./components/projectsCard";
+import blender_1 from "../public/images/blender_1.png";
+import godot_1 from "../public/images/godot_1.png";
 
 import React, { useState } from "react";
 
@@ -63,7 +68,7 @@ export default function Home() {
 					{Array(4)
 						.fill("HELLO")
 						.map((text, index) => (
-							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00] opacity-25">
+							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#cbcbcb] to-[#ffffff00] opacity-25">
 								{text}
 							</span>
 						))}
@@ -74,7 +79,7 @@ export default function Home() {
 					{Array(6)
 						.fill("ajmal roshan")
 						.map((text, index) => (
-							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00] opacity-25">
+							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#cbcbcb] to-[#ffffff00] opacity-25">
 								{text}
 							</span>
 						))}
@@ -85,7 +90,7 @@ export default function Home() {
 					{Array(4)
 						.fill("Ajmal Roshan")
 						.map((text, index) => (
-							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00] opacity-25">
+							<span key={index} className="text-4xl mx-4 text-[150px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#cbcbcb] to-[#ffffff00] opacity-25">
 								{text}
 							</span>
 						))}
@@ -99,18 +104,23 @@ export default function Home() {
 						<p className="text-sm md:text-lg">&quot;Crafting digital experiences that leave a lasting impact.&quot;</p>
 					</div>
 				</section>
-				{/* <section className="container flex flex-col gap-10 md:gap-32 p-10 md:p-32 bg-[#111111] min-h-screen min-w-full">
-					<div className="text-xl md:text-2xl  font-semibold">These are some of the things i know.</div>
-					<div className="flex flex-col md:flex-row gap-10 items-center">
-						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
-						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
-						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
-						<ProjectsCard src={unsplash_1} title={"hello"} description={"this a project that is very important to me"} />
-					</div>
-				</section> */}
 				<section className="flex flex-col w-full justify-between">
 					<div className="m-4 p-2 mt-10">
-						<h1 className=" text-center mb-2 text-2xl font-bold tracking-tight">You can Reach out to me.</h1>
+						<h2 className="mb-2 text-3xl text-center font-bold sm:text-3xl">These are some of my Projects.</h2>
+						<ImageCard
+							src={godot_1}
+							title={"Platformer Game"}
+							tech={"Godot Engine"}
+							description={"So, I tried making a platformer game in Godot following a tutorial by Brackeys on YouTube. It's a work in progress ! Stay tuned for the playable version!"}
+							link_text={"Coming Soon.."}
+							order={2}
+						/>
+						<ImageCard src={blender_1} title={"Just for Fun"} tech={"Blender"} description={"Check out this Blender project I made up during some freetime."} link_text={"View my project"} order={1} />
+					</div>
+				</section>
+				<section className="flex flex-col w-full justify-between">
+					<div className="m-4 p-2 mt-10">
+						<h1 className=" text-center mb-2 text-3xl font-bold tracking-tight">You can Reach out to me.</h1>
 						<div className="flex flex-col md:justify-around  items-center gap-10 w-full justify-between my-10">
 							<div className="flex flex-col md:flex-row gap-10">
 								<ProjectsCard title="Github" description="Code with me on Github! Let's build awesome stuff together." link={"https://github.com/ajuroshan"} link_text={"For Aliens"} />
@@ -134,8 +144,4 @@ export default function Home() {
 			</section>
 		</div>
 	);
-}
-
-{
-	/* <h1 className="p-3 text-xl text-transparent bg-clip-text bg-gradient-to-b from-[#7d7d7d] to-[#ffffff00]">These are some of my Projects.</h1> */
 }
