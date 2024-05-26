@@ -10,7 +10,7 @@ const ImageCard = ({ src, title, description, link, link_text, tech, order }) =>
 
 	const renderText = (
 		<div className="items-left flex flex-col pt-16 text-left lg:w-1/2 lg:flex-grow lg:items-start lg:pl-48 lg:text-left">
-			<h2 className="mb-2 text-3xl font-bold sm:text-3xl">{title}</h2>
+			<h2 className="mb-2 text-2xl font-bold md:text-3xl">{title}</h2>
 			<h2 className="mb-4 text-lg font-bold sm:text-lg">{tech}</h2>
 			<h2 className="mb-2 text-lg leading-tight sm:text-lg">{description}</h2>
 			<a href={link} className="inline-flex items-center text-sm font-bold leading-relaxed hover:text-[#ffc83d] transition duration-200 cursor-pointer">
@@ -24,7 +24,7 @@ const ImageCard = ({ src, title, description, link, link_text, tech, order }) =>
 
 	return (
 		<div>
-			<div className="max-w-7xl mx-auto flex flex-col px-5 py-28 lg:flex-row">
+			<div className="max-w-7xl mx-auto flex flex-col px-5 py-10 md:py-28 lg:flex-row">
 				{renderImage}
 				{renderText}
 			</div>
