@@ -100,13 +100,13 @@ export default function Home() {
 				<section className=" flex flex-col min-h-screen md:justify-center">
 					<div className="flex flex-col justify-center text-center gap-3 items-center m-10 pb-24 md:pb-36 p-4 flex-1">
 						<Image src={profile} alt="Picture of the author" height={110} />
-						<h1 className="text-2xl md:text-3xl font-bold mt-5">Hi, I &apos; m Ajmal Roshan 👋</h1>
+						<h1 className="text-2xl md:text-3xl font-bold mt-5">Hi, I&apos;m Ajmal Roshan 👋</h1>
 						<p className="text-sm md:text-lg">&quot;Crafting digital experiences that leave a lasting impact.&quot;</p>
 					</div>
 				</section>
 				<section className="flex flex-col w-full justify-between">
 					<div className="m-4 p-2 mt-10">
-						<h2 className="mb-2 text-2xl text-center font-bold md:text-3xl">These are some of my Projects.</h2>
+						<h2 className="mb-2 text-2xl text-center font-bold md:text-3xl">Take a glance some of my Projects.</h2>
 						<ImageCard
 							src={godot_1}
 							title={"Platformer Game"}
