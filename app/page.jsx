@@ -106,7 +106,7 @@ export default function Home() {
 				</section>
 				<section className="flex flex-col w-full justify-between">
 					<div className="m-4 p-2 mt-10">
-						<h2 className="mb-2 text-2xl text-center font-bold md:text-3xl">Take a glance some of my Projects.</h2>
+						<h2 className="mb-2 text-2xl text-center font-bold md:text-3xl">Take a glance at some of my Projects.</h2>
 						<ImageCard
 							src={godot_1}
 							title={"Platformer Game"}
