@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import Clarity from '@microsoft/clarity';
 import clsx from "clsx";
 import Mousefollow from "./components/Mousefollow";
 import "./globals.css";
@@ -8,6 +9,9 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "100", "700"
 
 import Nav from "./components/nav";
 import Footer from "./components/footer";
+
+const projectId = "pdz9c7fkf6"
+Clarity.init(projectId);
 
 export const metadata = {
 	title: "ajuroshan",
